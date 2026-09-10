@@ -58,3 +58,17 @@ header {
     max-width: 511px;
     margin-right: 47px;
 }
+
+/* Footer Style  */
+footer .footer-container {
+    display: flex;
+    gap: 116px;
+}
+.footer-container form input[type="text"],
+.footer-container form textarea {
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+}
