@@ -54,7 +54,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+#banner .banner-content h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+}
 
 /* Main About Section Style */
 #about .about-container {
@@ -103,4 +107,27 @@ footer .footer-container {
     margin-bottom: 24px;
     border: none;
     border-radius: 5px;
+}
+
+
+/* Responsive Design  */
+
+@media (max-width: 768px) {
+    nav, #banner, .skill-box, .resume-container, .footer-container {
+        flex-direction: column;
+    }
+    #banner {
+        margin: 20px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+/* Animation */
+
+.btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
