@@ -1,9 +1,9 @@
 /* Reset Style */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* navBar style */
 nav {
@@ -54,6 +54,7 @@ header {
     max-width: 267px;
 }
 /* Resume Section Style */
+
 #resume .resume-container {
     margin-top: 113px;
     display: flex;
