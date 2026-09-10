@@ -1,9 +1,32 @@
 /* Reset Style */
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+
+/* Common style */
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+.color-orange {
+    color: #FD6E0A;
+}
+.btn {
+    background-color: #FD6E0A;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.container {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /* navBar style */
 nav {
