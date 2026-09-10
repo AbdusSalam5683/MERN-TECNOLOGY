@@ -45,3 +45,16 @@ header {
     box-shadow: 0 6px 50px 0 #00000011;
     max-width: 267px;
 }
+/* Resume Section Style */
+#resume .resume-container {
+    margin-top: 113px;
+    display: flex;
+    gap: 24px;
+}
+.resume-container hr {
+    margin: 30px 0;
+}
+.resume-card {
+    max-width: 511px;
+    margin-right: 47px;
+}
