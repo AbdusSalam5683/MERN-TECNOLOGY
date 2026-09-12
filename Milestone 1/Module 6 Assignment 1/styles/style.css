@@ -835,3 +835,211 @@ ul {
         font-size: 14px;
     }
 }
+
+
+/* ==================== WHAT TRAVELERS SAY ==================== */
+.testimonials {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+/* ==================== SECTION HEADER ==================== */
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.testimonials-header-left {
+    flex: 1;
+}
+
+.testimonials-header .section-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.testimonials-header .section-subtitle {
+    font-size: 16px;
+    color: #6B7280;
+    font-weight: 400;
+}
+
+/* Navigation Arrows */
+.testimonials-header-right {
+    display: flex;
+    gap: 12px;
+}
+
+.arrow-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1.5px solid #E5E7EB;
+    background-color: transparent;
+    color: #1A1A1A;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.arrow-btn:hover {
+    background-color: #00A8CC;
+    border-color: #00A8CC;
+    color: #FFFFFF;
+}
+
+/* ==================== TESTIMONIALS GRID ==================== */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* ==================== TESTIMONIAL CARD ==================== */
+.testimonial-card {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Content (Left Side) */
+.testimonial-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-quote {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #00A8CC;
+    letter-spacing: 0.3px;
+}
+
+.author-location {
+    font-size: 13px;
+    color: #6B7280;
+    font-weight: 400;
+}
+
+/* Card Image (Right Side) */
+.testimonial-image {
+    width: 180px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover .testimonial-image img {
+    transform: scale(1.05);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .testimonials-header .section-title {
+        font-size: 36px;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .testimonial-quote {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonials-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .testimonials-header .section-title {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+    }
+    
+    .testimonials-header .section-subtitle {
+        font-size: 14px;
+    }
+    
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .testimonial-card {
+        flex-direction: column-reverse;
+    }
+    
+    .testimonial-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .testimonial-content {
+        padding: 24px;
+    }
+    
+    .testimonial-quote {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .author-name {
+        font-size: 14px;
+    }
+    
+    .author-location {
+        font-size: 12px;
+    }
+}
